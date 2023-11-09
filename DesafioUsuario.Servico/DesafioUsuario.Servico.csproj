@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DesafioUsuario.Data\DesafioUsuario.Data.csproj" />
+    <ProjectReference Include="..\DesafioUsuario.Dominio\DesafioUsuario.Dominio.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,6 +1,8 @@
 using DesafioUsuario.Data.Contexto;
 using DesafioUsuario.Data.Repositorio;
 using DesafioUsuario.Data.Repositorio.Interface;
+using DesafioUsuario.Servico.Servico;
+using DesafioUsuario.Servico.Servico.Interface;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -31,6 +33,7 @@ namespace DesafioUsuario
             services.AddDbContext<BancoContexto>(options => options.UseSqlServer(Configuration.GetConnectionString("Database")));
 
             services.AddScoped<IUsuarioRepositorio, UsuarioRepositorio>();
+            services.AddScoped<IUsuarioServico, UsuarioServico>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

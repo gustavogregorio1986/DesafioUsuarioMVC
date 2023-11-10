@@ -1,5 +1,24 @@
-﻿@*
+﻿@model List<DesafioUsuario.Models.ClienteModel>
+@*
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
 @{
 }
+
+<table>
+    <tr>
+        <tr>
+            <th>IdUsuario</th>
+            <th>Nome</th>
+            <th>E-mail</th>
+            <th>Upload</th>
+        </tr>
+        @foreach(var item in Model)
+        {
+            <td>{item.IdUsuario}</td>
+            <td>{item.Nome}</td>
+            <td>{item.Email}</td>
+            <td>{item.Upload}</td>
+        }
+    </tr>
+</table>

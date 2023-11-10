@@ -3,6 +3,7 @@ using DesafioUsuario.Data.Repositorio.Interface;
 using DesafioUsuario.Dominio.Dominio;
 using DesafioUsuario.Models;
 using Microsoft.AspNetCore.Mvc;
+using System.Collections.Generic;
 
 namespace DesafioUsuario.Controllers
 {
@@ -20,6 +21,7 @@ namespace DesafioUsuario.Controllers
             return View();
         }
 
+        [HttpPost]
         public IActionResult Cadastro(ClienteModel clienteModel)
         {
             try
@@ -46,7 +48,8 @@ namespace DesafioUsuario.Controllers
 
         public IActionResult Consulta()
         {
-            return View();
+            List<Usuario> lista = _usuarioRepositorio.ListarUsuarios();
+            return View(lista);
         }
     }
 }

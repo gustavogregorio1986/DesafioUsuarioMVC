@@ -75,3 +75,5 @@ C:\DesafioUsuario\DesafioUsuario\DesafioUsuario\obj\Debug\net5.0\refint\DesafioU
 C:\DesafioUsuario\DesafioUsuario\DesafioUsuario\obj\Debug\net5.0\DesafioUsuario.pdb
 C:\DesafioUsuario\DesafioUsuario\DesafioUsuario\obj\Debug\net5.0\DesafioUsuario.genruntimeconfig.cache
 C:\DesafioUsuario\DesafioUsuario\DesafioUsuario\obj\Debug\net5.0\ref\DesafioUsuario.dll
+C:\DesafioUsuario\DesafioUsuario\DesafioUsuario\obj\Debug\net5.0\Razor\Views\Cliente\Cadastro.cshtml.g.cs
+C:\DesafioUsuario\DesafioUsuario\DesafioUsuario\obj\Debug\net5.0\Razor\Views\Cliente\Consulta.cshtml.g.cs
